@@ -1,0 +1,15 @@
+
+  <div class="container mt-4 mb-4">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col tamaño" *ngFor="let noticia of listadoNoticias">
+          <div class="card">
+            <img [src]="noticia.urlToImage" class="card-img-top imagen" alt="imagen de noticias">
+            <div class="card-body">
+              <h5 class="card-title">{{noticia.title}}</h5>
+              <p class="card-text">{{noticia.content}}</p>
+            </div>
+            <a [href]="noticia.url" class="btn btn-info btn-block mt-2" target="_blank ">Leer mas</a>
+          </div>
+         
+        </div>
+  </div>
